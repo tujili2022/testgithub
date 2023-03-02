@@ -1,0 +1,2499 @@
+{\rtf1\ansi\ansicpg936\cocoartf2708
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red31\green31\blue36;}
+{\*\expandedcolortbl;;\csgenericrgb\c100000\c100000\c100000;\csgenericrgb\c12054\c12284\c14131;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab593
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 \{
+\f1\b \cb3 \
+
+\f0\b0 \cb3     code = 0;
+\f1\b \cb3 \
+
+\f0\b0 \cb3     data =     \{
+\f1\b \cb3 \
+
+\f0\b0 \cb3         "ignore_nets" =         \{
+\f1\b \cb3 \
+
+\f0\b0 \cb3             domains =             (
+\f1\b \cb3 \
+
+\f0\b0 \cb3                 "localhost.redpass.xiaohongshu.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                 "*.local.xiaohongshu.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                 "redpass.xiaohongshu.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                 "login2.xiaohongshu.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                 "dacs2.xiaohongshu.com"
+\f1\b \cb3 \
+
+\f0\b0 \cb3             );
+\f1\b \cb3 \
+
+\f0\b0 \cb3             ips =             (
+\f1\b \cb3 \
+
+\f0\b0 \cb3                 "10.4.8.112/32",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                 "175.24.255.222/32",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                 "150.158.222.170/32",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                 "150.158.220.188/32"
+\f1\b \cb3 \
+
+\f0\b0 \cb3             );
+\f1\b \cb3 \
+
+\f0\b0 \cb3         \};
+\f1\b \cb3 \
+
+\f0\b0 \cb3         "is_authed" = 1;
+\f1\b \cb3 \
+
+\f0\b0 \cb3         "l1_proxy_servers" =         (
+\f1\b \cb3 \
+
+\f0\b0 \cb3                         \{
+\f1\b \cb3 \
+
+\f0\b0 \cb3                 host = "https://10.4.8.112:2117";
+\f1\b \cb3 \
+
+\f0\b0 \cb3                 sni = "redpass-console.xiaohongshu.com";
+\f1\b \cb3 \
+
+\f0\b0 \cb3             \},
+\f1\b \cb3 \
+
+\f0\b0 \cb3                         \{
+\f1\b \cb3 \
+
+\f0\b0 \cb3                 host = "https://175.24.248.153:2117";
+\f1\b \cb3 \
+
+\f0\b0 \cb3                 sni = "redpass-console.xiaohongshu.com";
+\f1\b \cb3 \
+
+\f0\b0 \cb3             \},
+\f1\b \cb3 \
+
+\f0\b0 \cb3                         \{
+\f1\b \cb3 \
+
+\f0\b0 \cb3                 host = "https://47.99.131.64:443";
+\f1\b \cb3 \
+
+\f0\b0 \cb3                 sni = "l1-proxy.eagleyun.com";
+\f1\b \cb3 \
+
+\f0\b0 \cb3             \}
+\f1\b \cb3 \
+
+\f0\b0 \cb3         );
+\f1\b \cb3 \
+
+\f0\b0 \cb3         "m_auth_mode" = disabled;
+\f1\b \cb3 \
+
+\f0\b0 \cb3         "merge_cidr_threshold" = 2000;
+\f1\b \cb3 \
+
+\f0\b0 \cb3         "redirect_nets" =         (
+\f1\b \cb3 \
+
+\f0\b0 \cb3                         \{
+\f1\b \cb3 \
+
+\f0\b0 \cb3                 domains =                 (
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "pips.taboola.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "sync.transcend.io",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.cn-northwest-1.amazonaws.com.cn",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.onedrive.live.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.googletagmanager.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.app-measurement.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.dailydot.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.nmcdn.us",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "edge.fullstory.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "tr.snapchat.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.axshare.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.slack.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.stumbleupon.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.gpgtools.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.telegram.me",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "static.simonsignal.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.openai.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.www.slideshare.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.dropboxusercontent.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.avast.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.bit.ly",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.amplitude.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "t.co",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.google.com.sg",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.news.google.co.uk",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.devops.sparklife.app",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.gravatar.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.radimrehurek.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.dnsdist.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.instagram-press.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.news.google.ca",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.github.global.ssl.fastly.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.myworkday.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.istio.io",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "discord.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.gmane.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.instagram.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.fb.me",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.chrome-devtools-frontend.appspot.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.etsy.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.branch.io",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "js-agent.newrelic.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "whatsapp.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.google.co.in",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.fbcdn.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.map.fastly.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.businessweek.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.pinterest.jp",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.edgekey.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.prod.xiaohongshu.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "tiktok.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.googleapis.cn",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.avatars1.githubusercontent.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.cdn-ec.viddler.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.mitbbs.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.material.io",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "geolocation.onetrust.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.tiktok.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.marc.info",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.www.skype.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.refinery29.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.appload.ingest.crittercism.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.api.hypstar.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.android.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.global-ssl.fastly.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.webgradients.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.ntop.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.www.scmpchinese.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.ipstatp.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.bustle.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.accounts.youtube.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.dribble.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.reutersmedia.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.onestore.co.kr",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.accounts.google.com.vn",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.ytimg.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.facebook.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.angularjs.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.appspot.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.blogspot.de",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.google.com.hk",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.google.com.tw",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.knative.dev",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.substack.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.pastebin.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.facebookdevelopers.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.tumblr.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.flickr.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.complex.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.artstation.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "telegram.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.mashable.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.openvpn.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.facebookmarketingpartners.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "trc.taboola.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.wenxuecity.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.bbc.co.uk",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "vimeo.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.googleapis.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.wikipedia.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.tcptrace.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.ibytedtos.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.int.xiaohongshu.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "wikimedia.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.dribbble.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.lkml.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.hulu.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.sketchappsources.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.www.istockphoto.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.imgix.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.tiktokcdn.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.haproxy.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.uservoice.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.ustream.tv",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.sit.xiaohongshu.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "facebook.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.discordapp.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.apache.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.lesscss.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.time.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.airparrot.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.seclist.us",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "i.vimeocdn.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.googleadservices.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.wanqu.co",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.nist.gov",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.zlib.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.api.apptentive.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.businessinsider.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.flipagram.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.feedly.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.googlesource.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.componentkit.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "github.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "trc-events.taboola.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.whatsapp.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.coolors.co",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.w3schools.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.wrestlezone.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.youtube.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.fb-s-a-a.akamaihd.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "figma.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "tech-docs.devops.sit.xiaohongshu.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.fblitho.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.storify.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.quora.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.kibana.tencentelasticsearch.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.githubassets.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "telegram.dog",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.archive.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.videoelephant.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.cn-north-1.amazonaws.com.cn",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "snap.licdn.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.fabric.io",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.phoenixnewtimes.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.nytimes.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.philly.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.quoracdn.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.webgraphviz.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.ant.design",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.g.doubleclick.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.whatsapp.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.cdninstagram.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "cdn.cookielaw.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.shadowsocks.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.wiki.debian.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.scmp.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.arxiv.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "telegram.me",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.adv.admeme.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.freelan.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.readthedocs.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.line.me",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.thewrap.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.speeddial2.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.wwads.cn",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "sc-static.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.s3.eu-central-1.amazonaws.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.farxian.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.fb-s-c-a.akamaihd.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.vpngate.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.pugpig.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.reuters.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.adform.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.bidswitch.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "cdn.transcend.io",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.google-analytics.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.scribd.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "connecto-secure-payment.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "twitter.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.opentsdb.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.w.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.getdropbox.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.popyard.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.devops.uniik.me",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.abs.twimg.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.devconnect.avaya.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.bittitan.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.friendfeed.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.app.adespresso.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.googletagservices.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "google.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.byteoversea.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.facebook.design",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.stackoverflow.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.www.sharelatex.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.scdn.line-apps.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.carbonads.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "medium.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "px.ads.linkedin.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.ads-twitter.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.v2ex.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.daterangepicker.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.devops.sit.xiaohongshu.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "telemetry.transcend.io",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.figma.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.googlevideo.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.djangoproject.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.bloomberg.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.pinimg.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.pinimg.com.cdn.cloudflare.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.frescolib.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.medium.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.cos.ap-beijing.myqcloud.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.worldjournal.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.www.mycoreinfo.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.gitbooks.io",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.thecvf.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.t.co",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.cn.aminer.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.kandanapp.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.uplabs.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.line-scdn.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.behance.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.deskmetrics.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.huewire.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.ilike.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.unwire.hk",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.www.youtube.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.tiktokv.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.trello.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.twttr.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "v2ex.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.vimeo.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.zoho.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.wikimedia.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.bbc.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.ftchinese.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.cdn.sublimevideo.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.cdx.cedexis.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.devops.galapand.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.akamaihd.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.dtrace.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.dpaste.de",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.kakao.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.sstatic.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.paypal.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.rzd.ru",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "youtube.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.google.com.ph",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.engadget.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.passiontimes.hk",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.asana.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.zohostatic.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.soundcloud.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.int.sit.xiaohongshu.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "wwads.cn",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.github.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.economist.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.you.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.wsbtv.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.origami.design",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.ggpht.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.uni-freiburg.de",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.fb.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.dw.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.lists.debian.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.seventeen.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.www.oculus.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.fls.doubleclick.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.doubleclick.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.twimg.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "jbcz.12377.cn",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.amazon.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "app.link",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.google.cn",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.asyncdisplaykit.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.www.shutterstock.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.atlassian.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.opensea.io",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.blogspot.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.line.naver.jp",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.socialblade.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.txn.ingest.crittercism.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.rsyslog.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.admedo.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.cos.ap-nanjing.myqcloud.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "cds.taboola.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.reddit.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.slack-edge.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "web-sdk-cdn.singular.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.1251524319.clb.myqcloud.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.pinterest.ca",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "taptap.com.cn",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.cos.ap-shanghai.myqcloud.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "googleads.g.doubleclick.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.debian.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.graphql.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.linuxquestions.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.yandex.ru",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.pcache.alexa.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.repository.cloudera.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.telegram.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.devops.xiaohongshu.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "security.devops.xiaohongshu.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "cdn.pdst.fm",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.twitter.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.baom.com.cn",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.softether.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.uigradients.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.wiki.kernel.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.etsy.map.fastly.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.githubusercontent.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.akamai.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.flipagram.atlassian.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.a.trellocdn.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "discordapp.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.clevcode.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.sourceforge.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.appannie.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.mykplan.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.disqus.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.wattpad.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.gstatic.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.youtube-nocookie.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.licdn.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.duckduckgo.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.akamaiedge.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.safaribooksonline.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.slack.global.ssl.fastly.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.wordpress.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.wp.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.d32kak7w9u5ewj.cloudfront.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.appsflyer.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.goodreads.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.greatfire.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.dropbox.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.media.istockphoto.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.facebook.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.onenote.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.btdigg.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.trib.al",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.simpli.fi",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "connectotransfers.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.googleusercontent.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.gmail.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.myspace.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.linkedin.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.line-apps.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.godaddy.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.people.zoho.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.chrome.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "websdk.appsflyer.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.goo.gl",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.fb-s-d-a.akamaihd.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.googlesyndication.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.twitter4j.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.vube.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.pinterest.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.xiaohongshu.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "you.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.on-this-day.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.yahoo.co.jp",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.flipboard.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.redis.io",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "t.me",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.devops.catalogapp.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "bat.bing.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.fb-s-b-a.akamaihd.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.wsj.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.wolframalpha.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.oculus.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.cloudflare-dns.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "cdn.taboola.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "f.vimeocdn.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.weebly.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.assets-cdn.github.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.lwn.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.mobile01.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.cmdbuild.org",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.api.theinitium.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.discord.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "bam-cell.nr-data.net",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.google.com",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "*.google.co.jp",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "100014301751.xiaohongshu.com"
+\f1\b \cb3 \
+
+\f0\b0 \cb3                 );
+\f1\b \cb3 \
+
+\f0\b0 \cb3                 ips =                 (
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.147.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "91.108.8.0/22",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.34.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.37.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.12.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.135.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.141.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.156.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.157.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "149.154.168.0/22",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.138.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.33.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.33.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.38.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.132.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "91.108.56.0/23",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.3.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.141.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.149.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.32.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.5.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "3.3.3.3/32",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.128.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.132.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.136.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.6.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.143.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.152.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.158.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.11.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.155.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.140.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.142.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.142.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.11.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.11.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.9.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.145.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.145.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.146.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.147.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.0.221.153/32",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.139.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.132.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.134.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "119.3.123.61/32",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.149.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.156.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.158.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.39.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.135.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.141.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.143.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.33.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.139.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.154.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.133.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.134.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.0.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "101.132.99.163/32",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.8.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.4.0.0/16",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.149.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.157.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.36.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.13.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.153.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.37.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.14.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.3.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.138.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.138.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.129.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.141.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.138.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.142.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.145.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.13.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.36.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.137.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.153.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.157.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.34.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.149.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.150.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.156.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.37.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.137.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.137.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.140.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.148.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.0.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.5.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.5.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.9.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "13.113.172.79/32",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.131.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "91.108.16.0/22",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.12.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.5.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.33.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.4.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.132.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.141.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.144.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.150.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.154.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.154.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.10.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.130.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.130.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.134.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.154.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.0.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.151.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.156.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.10.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.15.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.155.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.128.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.133.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.133.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.7.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "13.251.220.61/32",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.132.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.135.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.146.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.6.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.146.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.154.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.155.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.10.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.130.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.142.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.143.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.144.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.1.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.8.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.128.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.145.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.0.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.13.14.103/32",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.137.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.141.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "91.105.192.0/23",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "91.108.12.0/22",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.15.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.8.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.137.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.128.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.158.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.36.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.158.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.35.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.6.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.155.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.130.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.143.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.147.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.145.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.139.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.137.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.147.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.34.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.131.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.135.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.145.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.155.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.14.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.2.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.23.0.0/16",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.139.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.130.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.142.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.156.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.136.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.145.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.33.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.14.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.151.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.38.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.15.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.5.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.129.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.130.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.135.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.139.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.7.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.32.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.4.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.5.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.7.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.129.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.131.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.137.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.149.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.133.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.140.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.34.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "60.205.253.33/32",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.150.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.157.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.39.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.7.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.36.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.148.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.152.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.33.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.36.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.14.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.15.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.3.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.136.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.133.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.13.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.13.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.143.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.149.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.8.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.140.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.151.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.10.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.3.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.151.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "149.154.160.0/22",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.131.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.146.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.147.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.150.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "175.24.251.231/32",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.12.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.6.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.148.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.136.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.142.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.36.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.153.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.154.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.158.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.36.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.129.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.129.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.144.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.153.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "149.154.172.0/22",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.135.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.140.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.148.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.152.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.139.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.130.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.133.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.135.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.14.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.156.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.37.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "109.239.140.0/24",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.11.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.138.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.135.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.145.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.40.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.143.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "91.108.20.0/22",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.12.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.3.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.142.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.143.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.146.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.148.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.35.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.6.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.131.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.148.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.35.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.35.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.2.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.155.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.129.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.153.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.37.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.146.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.37.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.15.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.128.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.132.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.132.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.139.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.34.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.37.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.12.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.14.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.138.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.129.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.144.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.153.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.14.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.3.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.7.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.8.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.155.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.151.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.35.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.38.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.143.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.157.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "149.154.164.0/22",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.129.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.131.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.133.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.10.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.150.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "67.198.55.0/24",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.15.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.7.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.131.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.134.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.141.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.146.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.158.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.2.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.130.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.131.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.138.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.147.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.136.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.148.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.12.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.31.140.28/32",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.151.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "185.76.151.0/24",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "5.28.192.0/18",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.10.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.3.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.147.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.152.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.34.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.34.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.2.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.8.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.141.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.35.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.0.32/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.15.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.156.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.8.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.8.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.128.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.132.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.134.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.136.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.14.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.138.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.152.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.35.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.1.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "91.108.20.0/23",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.11.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.13.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.149.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.34.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.0.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.0.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "91.108.56.0/22",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.9.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.22.77.155/32",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.128.224/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.146.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.152.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.32.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.37.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.10.0/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.1.128/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.13.160/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.10.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.102.1.96/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "10.13.15.155/32",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.136.64/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.144.192/27",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "192.168.149.128/27"
+\f1\b \cb3 \
+
+\f0\b0 \cb3                 );
+\f1\b \cb3 \
+
+\f0\b0 \cb3                 "l1_proxy_servers" =                 (
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "https://10.4.8.112:2117",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "https://175.24.248.153:2117",
+\f1\b \cb3 \
+
+\f0\b0 \cb3                     "https://47.99.131.64:443"
+\f1\b \cb3 \
+
+\f0\b0 \cb3                 );
+\f1\b \cb3 \
+
+\f0\b0 \cb3             \}
+\f1\b \cb3 \
+
+\f0\b0 \cb3         );
+\f1\b \cb3 \
+
+\f0\b0 \cb3         "user_attr" = "\{\\"user_id\\":\\"emp_3669dd3a-1b38-487d-bfe8-ee0912599afa\\",\\"dev_id\\":\\"9B821776-205F-4324-A577-6F8B5B7256C2\\",\\"department\\":[\{\\"id\\":\\"org_854349b1-a8a4-4111-804f-331c5a80a38c\\",\\"direct\\":true\},\{\\"id\\":\\"org_f80a4d0d-636d-496e-bbb4-558f30602be4\\",\\"direct\\":false\}],\\"os_type\\":\\"\\"\}";
+\f1\b \cb3 \
+
+\f0\b0 \cb3     \};
+\f1\b \cb3 \
+
+\f0\b0 \cb3     "data_not_changed" = 0;
+\f1\b \cb3 \
+
+\f0\b0 \cb3     "data_version" = 834334191;
+\f1\b \cb3 \
+
+\f0\b0 \cb3     message = Success;
+\f1\b \cb3 \
+
+\f0\b0 \cb3     "request_id" = "e11afde4-e752-4131-a382-28bad7f6ccdf";
+\f1\b \cb3 \
+
+\f0\b0 \cb3 \}}
